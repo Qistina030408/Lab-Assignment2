@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+
+			body 
+			{
+				margin: 0;
+				font-family: "Lucida Console", "Courier New", monospace;
+			}
+
+			.header 
+			{
+				text-align: center;
+				padding: 32px;
+			}
+
+			.row 
+			{
+				display: -ms-flexbox; 
+				display: flex;
+				-ms-flex-wrap: wrap; 
+				flex-wrap: wrap;
+				padding: 0 4px;
+			}
+
+			.column 
+			{
+				-ms-flex: 25%;
+				flex: 25%;
+				max-width: 25%;
+				padding: 0 4px;
+			}
+
+			.column img 
+			{
+				margin-top: 8px;
+				vertical-align: middle;
+				width: 100%;
+			}
+
+			@media screen and (max-width: 800px)
+			{
+			.column 
+			{
+				-ms-flex: 50%;
+				flex: 50%;
+				max-width: 50%;
+			}
+			}
+
+			@media screen and (max-width: 600px) 
+			{
+			.column 
+			{
+				-ms-flex: 100%;
+				flex: 100%;
+					max-width: 100%;
+			}
+			}
+			body
+			{
+				background-color:#C8B4BA;
+				text-align: center;				
+				margin-left:245px;
+				color:#FFE4E1;
+			}
+			.sidenav 
+			{
+				height: 100%;
+				width: 250px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #556B2F;
+				overflow-x: hidden;
+				padding-top: 20px;
+				opacity:0.7;		
+			}
+			.sidenav a 
+			{
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #FFE4E1;
+				display: block;
+			}
+			.sidenav a:hover 
+			{
+				color: #000000;
+			}
+			.p1 
+			{
+			  width: 268px;
+			  padding: 10px;
+			  border: 5px solid #E18D96;
+			  margin: 0;
+			}
+	</style>
+	<body>
+	
+		<div class="header">
+			<h1 style="color:#FFE4E1;">My Gallery</h1>
+
+		</div>
+		<div class="sidenav">
+			<a href="home.html">Home</a>
+			<a href="photo.html">Photos</a>
+			<a href="about.html">About Studies</a>
+			<a href="info.html">More Info</a>
+			<a href="feedbackform.html">Feedback Form</a>
+			<br><br><br><br><br><br><br><br>
+			<h3 style="font-family: Comic Sans MS, cursive, sans-serif;">____Favourite Quote____</h3>
+			<p style = "color:#FFE4E1;"><i>"It is more important to click with people than to click the shutter."</i></p>
+			<p style = "color:#FFE4E1;">ALFRED EISENSTAEDT</p>
+			<hr></hr>
+		</div>
+
+		<div class="row"> 
+			<div class="column">
+				<img src="photo1.jpg" style="width:100%">
+				<p style = "color:#566573;"class="p1">Played frisbee with friends at UiTM KT</p>
+				<img src="photo2.jpeg" style="width:100%">
+				<p style = "color:#566573;"class="p1">Homemade by me: Kuih Cara Manis</p>
+			</div>
+			
+			<div class="column">
+				<img src="photo3.jpeg" style="width:100%">
+				<p style = "color:#566573;" class="p1">During Karisma tournament with teammates at UiTM Jengka</p>
+				<img src="photo4.jpg" style="width:100%">
+				<p style = "color:#566573;"class="p1">My favourite mobile game but stopped playing recently because of studies</p>
+			</div>  
+			
+			<div class="column">
+				<img src="photo5.jpeg" style="width:100%">
+				<p style = "color:#566573;"class="p1">Last presentation during internship with supervisor</p>
+				<img src="photo6.jpg" style="width:100%">
+				<p style = "color:#566573;"class="p1">Favourite movie <br> Title:Fast & Furious 9 <br> Rate: 9/10 <br> p/s: recommended to watch from first series</p>
+			</div>
+			
+			<div class="column">
+				<img src="photo7.jpeg" style="width:100%">
+				<p style = "color:#566573;"class="p1">POKEHAT frisbee tournament at UiTM Dungun</p>
+				<img src="photo8.jpeg" style="width:100%">		
+				<p style = "color:#566573;"class="p1">Homemade by me: Donut Gula</p>
+			</div>
+		</div>
+
+	</body>
+</html>

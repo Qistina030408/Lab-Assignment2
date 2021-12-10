@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<style>
+		body{
+			background-color:#FEE9F1;
+			color:#556B2F;
+			}
+		.btn{
+				background-color: #556B2F;
+				border: none;
+				color: #FEE9F1;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				margin: 4px 2px;
+				cursor: pointer;
+				border-radius: 16px;
+		}
+		.btn:hover {
+				background-color: #000000;
+			}
+		</style>
+		<h1>Feedback Form</h1>
+	</head>
+	
+	<body>
+	<form id="myForm" href="home.html">
+		<p>Please enter your personal details below.</p>
+	
+		<fieldset>
+			<legend><b>Personal Information</b></legend>
+			Name:<br>
+			<input type = "text" name = "name" id="txtName" placeholder="Enter your name"required><br><br>
+			Email:<br>
+			<input type = "text" name = "email" id="txtEmail"placeholder="Enter your email"required><br><br>
+			Date Of Birth:
+			<input type = "date" name = "dateofbirth"required><br><br>
+		    Address:<br>
+			<textarea rows = "6" cols = "50" name = "address" >
+			</textarea>
+		</fieldset>
+			<br><br>
+			<p>Please enter your feedback below.</p>
+		<fieldset>
+			<legend><b>Feedback</b></legend>
+			Is this your first time visit this website?<br>
+			<input type = "radio" name = "answer" value = "yes">Yes
+			<input type = "radio" name = "answer" value = "no">No
+			
+			<br><br>
+			Were you able to find what you needed?<br>
+			<input type = "radio" name = "answer" value = "yes">Yes
+			<input type = "radio" name = "answer" value = "no">No
+			<br><br>
+			How easy it is to find information on this website?<br>
+			<input type = "radio" name = "difficulty" value = "very easy">Very easy
+			<input type = "radio" name = "difficulty" value = "easy">Easy
+			<input type = "radio" name = "difficulty" value = "average">Average
+			<input type = "radio" name = "difficulty" value = "difficult">Difficult
+			<input type = "radio" name = "difficulty" value = "very difficult">Very difficult
+			<br><br>
+			What is the likehood that you will return to this website?<br>
+			<input type = "radio" name = "difficulty" value = "extremely">Extremely likely
+			<input type = "radio" name = "difficulty" value = "very">Very Likely
+			<input type = "radio" name = "difficulty" value = "moderately">Moderately Likely
+			<input type = "radio" name = "difficulty" value = "slightly">Slightly Likely
+			<input type = "radio" name = "difficulty" value = "unlikely">Unlikely to return
+			<br><br>
+			
+			Please provide any additional comments or suggestions.<br>
+			<textarea rows = "6" cols = "50" name = "comments">
+			</textarea>
+			
+		</fieldset>
+		<button class = "btn" type="submit">Submit</button>
+		<button class = "btn" type = "reset">Reset</button>
+
+	</form>
+
+		<script>
+		document.getElementById("myForm").onsubmit = function() {myFunction()};
+
+		function myFunction() {
+		  alert("The form was submitted. Thank you for your feedback!");
+		}
+
+		</script>
+		
+		<div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    </div>
+	</body>
+</html>
